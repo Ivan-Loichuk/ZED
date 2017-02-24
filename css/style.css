@@ -1,7 +1,12 @@
 *{
-
+ font-family: 'Noto Sans','Raleway', sans-serif; 
 }
 body{
+
+}
+hr{
+	margin-top: 0px;
+	margin-bottom: 0px;
 
 }
 .top{
@@ -88,9 +93,11 @@ body{
 	padding: 15px 40px;
 	background-color: #008DD3;
 	border: none;
+	box-shadow: 1px 1px 2px #3E3A39;
+	text-shadow: 1px 1px 0px #000;
 }
 .button:hover{
-	
+	box-shadow: 2px 2px 4px #3E3A39;
 	background-color: #C24343;
 	border: none;
 }
@@ -127,6 +134,7 @@ body{
     height: 50px;
     color: #333;
     font-size: 18px;
+    box-shadow: 0px 1px 1px #3E3A39;
 }
 .signin_form{
 	margin-top: 7%;
@@ -168,6 +176,7 @@ form .btn-signin:hover{
    letter-spacing: normal;
    word-spacing: normal;
    text-align: start;
+   box-shadow: 0px 1px 1px #000;
 }
 .signup .signup_form{
 	margin-top: 5%;
@@ -218,7 +227,7 @@ form .btn-signin:hover{
 /* About */
 .about{
 	height: 600px;
-	background-color: #A7241C;
+	background-color: #E0DCDD;
 }
 
 
