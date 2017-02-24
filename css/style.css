@@ -23,8 +23,7 @@ body{
 	
 }
 .navbar ul{
-   float: right;
-
+   text-align: center;
 }
 
 .navbar ul>li{
@@ -85,7 +84,7 @@ body{
 	border: none;
 }
 .button:hover{
-	padding: 15px 40px;
+	
 	background-color: #C24343;
 	border: none;
 }
@@ -110,28 +109,112 @@ body{
 .signin{
 	background-color: #fff;
 	margin-top: 10%;
-	margin-bottom: 25%;
+	margin-bottom: 50%;
 }
 .info{
-	padding: 10px 0; 
+	padding-top: 10px; 
 	margin-right: 8%;
 	margin-left: 8%;
 }
-.form-group input{
-    padding-top: 30px;
-    margin-top: 20px;
+.signin_form input{
+    width: 100%;
+    height: 50px;
+}
+.signin_form{
+	margin-top: 7%;
+    margin-bottom: 7%;
     margin-left: 8%;
     margin-right: 8%;
-    width: 84%;
-    padding-bottom: 30px;
-
 }
 form .btn-signin{
 	padding-top: 15px;
-    margin-top: 20px;
+    padding-bottom: 15px;
     margin-left: 8%;
     margin-right: 8%;
-    padding-bottom: 15px;
     margin-bottom: 20px;
-    
+}
+form .btn-signin:focus,active{
+  color: #fff;
+  background-color: #286090;
+  border: none;
+
+}
+form .btn-signin:hover{
+	border: none;
+}
+
+/* registration form */ 
+
+.registration-form {
+	background-image: url("../img/pattern2.png");
+	//background-color: #D9D9D9;
+}
+ .signup_form input{
+   width: 100%;
+   height: 50px;
+}
+.signup .signup_form{
+	margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.signup{
+	background-color: #fff;
+	margin-top: 10%;
+	margin-bottom: 10%;
+}
+.signup h2{
+	padding-top: 20px;
+	margin-right: 10%;
+	margin-left: 10%;
+}
+
+.sex{
+	margin-right: 10%;
+	margin-left: 10%;
+
+}
+.sex input{
+	margin-right: 20px;
+}
+.birthday{
+	margin-right: 10%;
+	margin-left: 10%;
+}
+.birthday input{
+	margin:0;
+	padding: 5px 10px;
+	font-size: 16px;
+	border: solid 1px #D9D9D9;
+	border-radius: 4px; 
+}
+.signup .btn-signin{
+    margin-left: 10%;
+    margin-right: 10%;
+   
+}
+/* About */
+.about{
+	height: 600px;
+	background-color: #A7241C;
+}
+
+/* Footer */
+
+footer {
+	height: 50px;
+}
+
+footer .list-gr {
+  display: inline;
+  padding: 10px 15px;
+}
+footer p{
+	padding: 10px 30px;
+
+}
+footer ul{
+	padding: 10px 0;
 }

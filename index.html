@@ -41,23 +41,23 @@
 									<h4>introducing lucid theme</h4>
 									<h2>Carefully crafted and beautiful landing page.</h2>
 									<h3>Etiam ullamcorper et turpis eget hendrerit. Praesent varius risus mi, at elementum magna ultricies accumsan. Cras venenatis lacus sed dolor placerat tempus. Morbi blandit at neque ut imperdiet.</h3>
-									 <p><a class="btn btn-primary btn-lg button" href="#" role="button">REGISTRATION</a></p>
+									 <p><a class="btn btn-primary btn-lg button" href="#registration" role="button">REGISTRATION</a></p>
 							   </div>
 							</div>
-							<div class="col-md-offset-1 col-md-4 col-xs-12">
+							<div class="col-md-offset-1 col-md-4 col-sm-offset-2 col-sm-8 col-xs-12">
                                 <div class="signin">
                                     <div class="info">
                                     	<p><h2>Log in</h2>
                                     	<h4>Please complete the form.</h4></p>
                                     </div>
 									<form>
-										  <div class="form-group">
+										  <div class="signin_form">
 										   	  <input type="email" class="form-control" id="email" placeholder="EMAIL">
 										  </div>
-										  <div class="form-group">
+										  <div class="signin_form">
 											   <input type="password" class="form-control" id="pwd" placeholder="PASSWORD">
 										  </div>
-										      <button type="submit" class="btn btn-default btn-signin">SIGN IN</button>
+										      <button type="submit" class="btn btn-default btn-signin  button">SIGN IN</button>
 									</form>
 								</div>
 							</div>
@@ -69,10 +69,83 @@
 		</div>
 	</header>
 
-	<section class="main-content">
-	
-			
+	<section class="registration-form" id="registration">
+	   <div class="container">
+	   		<div class="row">
+	   			<div class="col-md-offset-3 col-md-6 col-sm-offset-1 col-sm-10 col-xs-12">
+	   				<form class="signup">
+
+	   				   <span><h2>Sign Up</h2></span>
+	   				     <div class="signup_form">
+							 <input type="text" class="form-control" id="name" placeholder="NAME">
+						 </div>
+						 <div class="signup_form">
+							 <input type="text" class="form-control" id="surname" placeholder="SURNAME">
+						 </div>
+						 <div class="sex">
+						    <label for="male"> Male
+							<input type="radio"  name="sex" id="male" value ="Male"></label>
+							<label for="female">Female
+							<input type="radio"  name="sex" id="female" value="Female"></label>
+						 </div>
+						 <div class="birthday signup_form">
+						    <label for="age">Birthday: 
+							 <input type="date" name="age" id="age" placeholder="AGE"></label>
+						 </div>
+					
+						 
+						 <div class="signup_form">
+							 <input type="email" class="form-control" id="email" placeholder="EMAIL">
+						 </div>
+						 <div class="signup_form">
+							  <input type="password" class="form-control" id="pwd" placeholder="PASSWORD">
+						  </div>
+						  <div class="signup_form">
+							  <input type="password" class="form-control" id="verify_pwd" placeholder="VERIFY YOUR PASSWORD">
+						  </div>
+						  
+						 
+						  <button type="submit" class="btn btn-default btn-signin">SIGN UP</button>
+					</form>
+	   			</div>
+	   			
+	   		</div>
+	   </div>
 	</section>
+	<section class="about">
+		<div class="container">
+			<div class="row">
+				
+			</div>
+		</div>
+	</section>
+
+	<footer>
+	    <div class="row">
+	    	<div class="col-md-2">
+	    		 <p>Dice@2017</p>
+	    	</div>
+	    	<div class="col-md-4">
+	    		<ul>
+	    			<li class="list-gr"><a href="#">about</a></li>
+	    			<li class="list-gr"><a href="#">help</a></li>
+	    			<li class="list-gr"><a href="#">developers</a></li>
+	    		</ul>
+	    	</div>
+	    	<div class="col-md-6">
+	    		<ul>
+	    		    <li class="list-gr">language: </li>
+	    			<li class="list-gr"><a href="#">english</a></li>
+	    			<li class="list-gr"><a href="#">polish</a></li>
+	    			<li class="list-gr"><a href="#">українська</a></li>
+	    			<li class="list-gr"><a href="#">русский</a></li>
+	    		</ul>
+	    		
+
+	    	</div>
+	    </div>
+		
+	</footer>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 	<script src="js/bootstrap.js"></script>
