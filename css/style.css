@@ -6,6 +6,7 @@ body{
 }
 .top{
 	background-image: url("../img/bg.png");
+
 	height: 100%;
 }
 .logotype{
@@ -78,6 +79,11 @@ body{
 	color: #7F7C76;
 	font-size: 18px;
 }
+.jumbotron .button{
+	margin-top: 8%;
+
+}
+
 .button{
 	padding: 15px 40px;
 	background-color: #008DD3;
@@ -107,9 +113,9 @@ body{
 
 
 .signin{
-	background-color: #fff;
+	background-color: rgba(255, 255, 255, 0.95);
 	margin-top: 10%;
-	margin-bottom: 50%;
+	margin-bottom: 45%;
 }
 .info{
 	padding-top: 10px; 
@@ -119,6 +125,8 @@ body{
 .signin_form input{
     width: 100%;
     height: 50px;
+    color: #333;
+    font-size: 18px;
 }
 .signin_form{
 	margin-top: 7%;
@@ -146,25 +154,37 @@ form .btn-signin:hover{
 /* registration form */ 
 
 .registration-form {
-	background-image: url("../img/pattern2.png");
-	//background-color: #D9D9D9;
+	background-image: url("../img/TEEN.jpg");
+	background-size: 100% 100%;
+	background-position:  top;
+	
 }
  .signup_form input{
    width: 100%;
-   height: 50px;
+   color: #333;
+   font-size: 18px;
+   height: 40px;
+   text-rendering: auto;
+   letter-spacing: normal;
+   word-spacing: normal;
+   text-align: start;
 }
 .signup .signup_form{
 	margin-top: 5%;
     margin-bottom: 5%;
     margin-left: 10%;
     margin-right: 10%;
+
+
 }
 
 .signup{
-	background-color: #fff;
+	color: #fff;
+	background-color: rgba(0,0,0, 0.5);
 	margin-top: 10%;
-	margin-bottom: 10%;
+	margin-bottom: 10%; 
 }
+
 .signup h2{
 	padding-top: 20px;
 	margin-right: 10%;
@@ -201,6 +221,7 @@ form .btn-signin:hover{
 	background-color: #A7241C;
 }
 
+
 /* Footer */
 
 footer {
@@ -218,3 +239,28 @@ footer p{
 footer ul{
 	padding: 10px 0;
 }
+
+
+/* RWD */  
+
+@media (max-width: 986px) {
+
+	.registration-form {
+	background-image: url("../img/TEEN.jpg");
+	background-size: 130% 100%;
+	background-position:  top;
+	
+}
+}
+
+@media (max-width: 768px) {
+
+	.registration-form {
+	background-size: 220% 100%;
+}
+   .signup{
+	background-color: rgba(0,0,0, 0.7);
+}
+
+}
+
