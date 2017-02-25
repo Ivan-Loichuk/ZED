@@ -1,17 +1,15 @@
 *{
  font-family: 'Noto Sans','Raleway', sans-serif; 
 }
-body{
 
-}
 hr{
 	margin-top: 0px;
 	margin-bottom: 0px;
-
 }
-.top{
-	background-image: url("../img/bg.png");
 
+ /* Navigation ang logotype */
+header{
+	background-image: url("../img/bg.png");
 	height: 100%;
 }
 .logotype{
@@ -21,17 +19,20 @@ hr{
 	height: auto;
 
 }
+.nav-menu{
+	 background-color: inherit;
+     border-color: inherit;
+     border: inherit;
+}
 .navbar-brand{
 	margin:0;
 	padding:10px;
 	height: 80px;
-	width: 150px;
-	
+	width: 150px;	
 }
 .navbar ul{
    text-align: center;
 }
-
 .navbar ul>li{
 	padding: 15px 0;
 }
@@ -56,38 +57,32 @@ hr{
 	float: right;
 	
 }
-@media (max-width: 768px) {
-	.navbar-collapse{
-		float: none;
-		text-align: center;
-	}
-    
-}
 
-/* MAIN INFO */
-.jumbotron{
-	background-color: none;
+/* signup button and some information about site */
+.jmt-info{
+	background-color: 0;
+	padding-top: 5%;
 	padding-left: 0;
-	
-
 }
-.jumbotron h4{
+.jmt-info h4{
    color: #008DD3;
    font-size: 14px;
    text-transform: uppercase;
 }
-.jumbotron h2{
+.jmt-info h2{
 	color: white;
 	font-size: 48px;
 }
-.jumbotron h3{
+.jmt-info h3{
 	color: #7F7C76;
 	font-size: 18px;
 }
-.jumbotron .button{
+.jmt-info .button{
 	margin-top: 8%;
 
 }
+
+/*  Signin form */
 
 .button{
 	padding: 15px 40px;
@@ -97,13 +92,12 @@ hr{
 	text-shadow: 1px 1px 0px #000;
 }
 .button:hover{
-	box-shadow: 2px 2px 4px #3E3A39;
+	box-shadow: 1px 1px 2px #3E3A39;
 	background-color: #C24343;
 	border: none;
 }
 .btn-primary:hover,
 .btn-primary:focus {
-  /*background-color: #265a88;*/
   background-position: 0 -55px;
 }
 .btn-signin{
@@ -118,13 +112,12 @@ hr{
 	 color: white;
 }
 
-
 .signin{
 	background-color: rgba(255, 255, 255, 0.95);
 	margin-top: 10%;
 	margin-bottom: 45%;
 }
-.info{
+.signin .info{
 	padding-top: 10px; 
 	margin-right: 8%;
 	margin-left: 8%;
@@ -134,7 +127,6 @@ hr{
     height: 50px;
     color: #333;
     font-size: 18px;
-    box-shadow: 0px 1px 1px #3E3A39;
 }
 .signin_form{
 	margin-top: 7%;
@@ -165,7 +157,6 @@ form .btn-signin:hover{
 	background-image: url("../img/TEEN.jpg");
 	background-size: 100% 100%;
 	background-position:  top;
-	
 }
  .signup_form input{
    width: 100%;
@@ -176,15 +167,12 @@ form .btn-signin:hover{
    letter-spacing: normal;
    word-spacing: normal;
    text-align: start;
-   box-shadow: 0px 1px 1px #000;
-}
+ }
 .signup .signup_form{
 	margin-top: 5%;
     margin-bottom: 5%;
     margin-left: 10%;
     margin-right: 10%;
-
-
 }
 
 .signup{
@@ -203,7 +191,6 @@ form .btn-signin:hover{
 .sex{
 	margin-right: 10%;
 	margin-left: 10%;
-
 }
 .sex input{
 	margin-right: 20px;
@@ -222,9 +209,10 @@ form .btn-signin:hover{
 .signup .btn-signin{
     margin-left: 10%;
     margin-right: 10%;
-   
 }
-/* About */
+
+/* About us */
+
 .about{
 	height: 600px;
 	background-color: #E0DCDD;
@@ -243,12 +231,10 @@ footer .list-gr {
 }
 footer p{
 	padding: 10px 30px;
-
 }
 footer ul{
 	padding: 10px 0;
 }
-
 
 /* RWD */  
 
@@ -270,6 +256,13 @@ footer ul{
    .signup{
 	background-color: rgba(0,0,0, 0.7);
 }
+    .navbar-collapse{
+		float: none;
+		text-align: center;
+	}
+    .navbar-nav {
+	    float: right;
+    }
 
 }
 

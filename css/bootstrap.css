@@ -3126,7 +3126,7 @@ fieldset[disabled] .btn-default.focus {
 }
 .btn-primary:hover {
   color: #fff;
-  /*background-color: #286090;*/
+  background-color: #286090;
   border-color: #204d74;
 }
 .btn-primary:active,
@@ -4596,8 +4596,8 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   color: #ccc;
 }
 .navbar-inverse {
- /* background-color: #222;
-  border-color: #080808;*/
+  background-color: #222;
+  border-color: #080808;
 }
 .navbar-inverse .navbar-brand {
   color: #9d9d9d;
@@ -4631,7 +4631,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   background-color: transparent;
 }
 .navbar-inverse .navbar-toggle {
-  /*border-color: #333;*/
+  border-color: #333;
 }
 .navbar-inverse .navbar-toggle:hover,
 .navbar-inverse .navbar-toggle:focus {
@@ -4967,7 +4967,7 @@ a.badge:focus {
   padding-bottom: 30px;
   margin-bottom: 30px;
   color: inherit;
- /* background-color: #eee;*/
+ background-color: #eee;
 }
 .jumbotron h1,
 .jumbotron .h1 {
