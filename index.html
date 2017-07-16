@@ -5,9 +5,9 @@
 	<title>Document</title>
 	<meta charset="UTF-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="style/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style/css/font-awesome.min.css">
+	<link rel="stylesheet" href="style/css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Noto+Sans|Raleway" rel="stylesheet">
 	<!-- live reloader -->
 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
@@ -71,39 +71,78 @@
 	<section class="registration-form" id="registration">
 	   <div class="container">
 	   		<div class="row">
-	   			<div class="col-md-5  col-sm-8 col-xs-12">
-	   				<form class="signup">                    <!-- signup form -->
-	   				     <span><h2>Sign Up</h2></span>
+	   			<div class="col-md-4  col-sm-6 col-xs-12 reset_padding">
+					<div class="form">
+						<form class="signup">                    <!-- signup form -->
+							<span><h2>Sign Up</h2></span>
 
-	   				     <div class="signup_form">
-							 <input type="text" class="form-control" id="name" placeholder="Name">
-						 </div>
-						 <div class="signup_form">
-							 <input type="text" class="form-control" id="surname" placeholder="Surname">
-						 </div>
-						 <div class="sex">
-						    <label for="male"> Male
-							<input type="radio"  name="sex" id="male" value ="Male"></label>
-							<label for="female">Female
-							<input type="radio"  name="sex" id="female" value="Female"></label>
-						 </div>
-						 <div class="birthday signup_form">
-						    <label for="age">Birthday: 
-							 <input type="date" name="age" id="age" placeholder="Age"></label>
-						 </div>					
-						 <div class="signup_form">
-							 <input type="email" class="form-control" id="email" placeholder="Email">
-						 </div>
-						 <div class="signup_form">
-							  <input type="password" class="form-control" id="pwd" placeholder="Password">
-						  </div>
-						  <div class="signup_form">
-							  <input type="password" class="form-control" id="verify_pwd" placeholder="Verify your password">
-						  </div>
-						 						 
-						  <button type="submit" class="btn btn-default btn-signin button">SIGN UP</button>
-					</form>
-	   			</div>	
+							<div class="signup_form">
+								<input type="text" class="form-control" id="name" placeholder="Name">
+							</div>
+							<div class="signup_form">
+								<input type="text" class="form-control" id="surname" placeholder="Surname">
+							</div>
+							<div class="sex">
+								<label for="male"> Male
+									<input type="radio"  name="sex" id="male" value ="Male"></label>
+								<label for="female">Female
+									<input type="radio"  name="sex" id="female" value="Female"></label>
+							</div>
+							<div class="birthday signup_form">
+								<input type="date" name="age" id="age" placeholder="Birthday"></label>
+							</div>
+							<div class="signup_form">
+								<input type="email" class="form-control" id="email" placeholder="Email">
+							</div>
+							<div class="signup_form">
+								<input type="password" class="form-control" id="pwd" placeholder="Password">
+							</div>
+							<div class="signup_form">
+								<input type="password" class="form-control" id="verify_pwd" placeholder="Verify your password">
+							</div>
+
+							<button type="submit" class="btn btn-default btn-signin button">SIGN UP</button>
+						</form>
+					</div>
+
+	   			</div>
+				<div class="col-md-4 col-sm-3 col-xs-6 reset_padding">
+					<div class="list_of_functionality">
+						<div class="slides">
+							<div class="slide">
+								<img src="img/slide_1.png" alt="">
+								<div class="text"><p>Make a posts</p></div>
+							</div>
+							<div class="slide">
+								<img src="img/slide_1.png" alt="">
+								<div class="text"><p>Send messeges</p></div>
+							</div>
+							<div class="slide">
+								<img src="img/slide_1.png" alt="">
+								<div class="text"><p>Create your own group</p></div>
+							</div>
+							<div class="slide">
+								<img src="img/slide_1.png" alt="">
+								<div class="text"><p>Listen to music</p></div>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-3 col-xs-6 reset_padding">
+					<div class="about_dice_info">
+						<div class="title">
+							What is Lorem Ipsum?
+						</div>
+						<div class="text">
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+							Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+							when an unknown printer took a galle</p>
+						</div>
+
+					</div>
+				</div>
 	   		</div> <!--  End row -->
 	   </div> <!-- End container -->
 	</section>
