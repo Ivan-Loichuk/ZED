@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+}
+hr {
+  width: 100%;
+}
+header {
+  height: 52px;
+}
+header .nav-menu {
+  min-height: 35px;
+  border-radius: 0;
+  position: fixed;
+  top: 0;
+  left: -2%;
+  width: 104%;
+  z-index: 1024;
+}
+header .nav-menu .navbar {
+  padding-right: 10%;
+  padding-left: 10%;
+  background-color: #8A25E9;
+  border-color: #5700b6;
+}
+header .nav-menu .navbar .navbar-header .navbar-brand {
+  margin: 0;
+  padding: 5px;
+  height: auto;
+  width: 100px;
+}
+header .nav-menu .navbar .navbar-header .navbar-brand .logotype {
+  margin: 0;
+  padding-top: 3px;
+  padding-left: 0px;
+  width: 60%;
+  height: auto;
+}
+header .nav-menu .navbar .navbar-collapse .nav a {
+  color: #ffffff;
+  background-color: #8A25E9;
+}
+header .nav-menu .navbar .navbar-collapse .nav a:hover {
+  background-color: #6803c7;
+  color: #ffffff;
+}
+header .nav-menu .navbar .navbar-collapse .nav ul {
+  color: #ffffff;
+  background-color: #8A25E9;
+}
+header .nav-menu .navbar .navbar-collapse .navbar-form button {
+  background-color: #FFFFFF;
+  color: #000000;
+}
+header .nav-menu .navbar .navbar-collapse .navbar-form button:hover {
+  background-color: #dddddd;
+  color: #000000;
+}
+section.user_info {
+  height: 5000px;
+}
+section.user_info .profile_image {
+  border: 1px solid #e4cbcb;
+}
+section.user_info .profile_image .img {
+  background-image: url('../img/Ivan_Loichuk_bg.jpg');
+  width: 90%;
+  height: 250px;
+  background-position: center;
+  background-size: cover;
+  margin-left: 5%;
+  margin-top: 5%;
+  border-radius: 2px;
+}
+section.user_info .profile_image .img img {
+  width: 100%;
+  height: auto;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+section.user_info .profile_image .change_photo button {
+  width: 90%;
+  margin: 5% 0 5% 5%;
+}
+section.user_info .page_info {
+  position: relative;
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;
+}
+section.user_info .page_info .page_top .userName {
+  font-size: 26px;
+  float: left;
+  width: 50%;
+  margin: 0;
+  padding: 2% 2% 2% 5%;
+}
+section.user_info .page_info .page_top .isOnline {
+  float: right;
+  padding: 3% 3% 2% 2%;
+  margin: 0 auto;
+  color: #aba4a4;
+}
+section.user_info .page_info .profile_info .profile_info_row {
+  display: block;
+}
+@media (max-width: 1186px) {
+  header {
+    height: 102px;
+  }
+}
+@media (max-width: 990px) {
+  section.user_info .profile_image .img img {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    height: 52px;
+  }
+}
+@media (max-width: 480px) {
+  .custom-col-image {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+@media (max-width: 340px) {
+  .custom-col-image {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}

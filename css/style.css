@@ -9,7 +9,7 @@ hr{
 
  /* Navigation ang logotype */
 header{
-	background-image: url("../../img/bg.png");
+	background-image: url("../img/bg.png");
 	height: 100%;
 }
 .logotype{
@@ -45,7 +45,7 @@ header{
 }
 .navbar-inverse{
 	background-image: none;
-	background-color: none;
+	background-color: inherit;
 	
 }
 .navbar-toggle{
@@ -59,7 +59,6 @@ header{
 
 /* signup button and some information about site */
 .jmt-info{
-	background-color: 0;
 	padding-top: 5%;
 	padding-left: 0;
 }
