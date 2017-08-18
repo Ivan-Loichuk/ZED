@@ -27,4 +27,29 @@ $(document).ready(function () {
 
     /* end crop functions */
 
+<<<<<<< HEAD
+    /* Open and close modal window
+     * Change profile image
+     */
+    $(".modal-trigger").click(function(e){
+        e.preventDefault();
+        dataModal = $(this).attr("data-modal");
+        $("#" + dataModal).css({"display":"block"});
+    });
+
+    $(".close-modal, .modal-sandbox").click(function(){
+        $(".modal").css({"display":"none"});
+    });
+
+/* links hover effect*/
+    // exchange image when mouse hover
+    $(link_edit_icon).hover(function(){
+            $('#edit_icon').attr('src', '../img/edit_icon_black.png');
+        },
+        function(){
+            $('#edit_icon').attr('src', '../img/edit_icon_gray.png');
+        });
+
+=======
+>>>>>>> 405696bde06d631e08e73d465e6bbc611b7e8f18
 });

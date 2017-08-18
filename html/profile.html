@@ -2,12 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+<<<<<<< HEAD
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UserName</title>
+    <link rel="shortcut icon" href="../img/shortcut_icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/reset.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/profile.css">
+    <link rel="stylesheet" href="../css/jquery.Jcrop.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu" rel="stylesheet">
+=======
     <title>UserName</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/profile.css">
     <link rel="stylesheet" href="../css/jquery.Jcrop.css">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Raleway" rel="stylesheet">
+>>>>>>> 405696bde06d631e08e73d465e6bbc611b7e8f18
 </head>
 <body>
 <header>
@@ -70,6 +83,22 @@
             <div class="col-md-3 col-sm-4 col-xs-5 custom-col-image">
                 <div class="profile_image">
                     <div class="img">
+<<<<<<< HEAD
+                        <a href="#"><img src="../img/Ivan_Loichuk_bg.jpg" alt=""></a>
+                    </div>
+                    <div class="change_photo">
+                        <button type="button" class="modal-trigger btn btn-default" data-modal="modal-change-photo">Change photo</button><!-- Trigger Modal. -->
+                        <!-- Modal window -->
+                        <div class="modal" id="modal-change-photo">
+                            <div class="modal-box">
+                                <div class="modal-header">
+                                    <div class="close-modal">&#10006;</div>
+                                    <p>Crop your profile photo</p>
+                                </div>
+                                <div class="modal-body">
+                                    <!-- This is the image we're attaching Jcrop to -->
+                                    <img src="../img/TEEN.jpg" id="cropbox" style="" />
+=======
                         <!--<a href="#"><img src="../img/Ivan_Loichuk_bg.jpg" alt=""></a>-->
                     </div>
                     <div class="change_photo">
@@ -80,6 +109,7 @@
                                 <div class="modal-content">
                                     <!-- This is the image we're attaching Jcrop to -->
                                     <img src="../img/Ivan_Loichuk_bg.jpg" id="cropbox" />
+>>>>>>> 405696bde06d631e08e73d465e6bbc611b7e8f18
 
                                     <!-- This is the form that our event handler fills -->
                                     <form action="" method="post" onsubmit="return checkCoords();">
@@ -87,13 +117,95 @@
                                         <input type="hidden" id="y" name="y" />
                                         <input type="hidden" id="w" name="w" />
                                         <input type="hidden" id="h" name="h" />
+<<<<<<< HEAD
+                                        <input type="submit" value="Crop and Save" class="btn btn-default " />
+                                        <!-- Important!!  Upload image size (width <= 800, height: auto) -->
+                                        <span class="btn btn-default btn-file">Upload image<input type="file" value="Upload image" class="btn btn-large btn-inverse"/></span>
+=======
                                         <input type="submit" value="Crop Image" class="btn btn-large btn-inverse" />
+>>>>>>> 405696bde06d631e08e73d465e6bbc611b7e8f18
                                     </form>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+<<<<<<< HEAD
+                <div class="forum_box">
+                    <ul class="forums">
+                        <li class="header"><p>Last activity</p></li>
+                        <li class="forum_posts">
+                            <ul>
+                                <li class="forum_post">
+                                    <table>
+                                        <tr>
+                                            <td rowspan="2" class="img_block"><a href="#" class="img"><img src="../img/Ivan_Loichuk_bg.jpg" alt=""></a></td>
+                                            <td colspan="2" class="title_block"><a href="#"><span>How to fix this</span></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="author_block"><a href="#" ><span>Ivan,</span></a></td>
+                                            <td class="views_block"><span class="views_label"><img
+                                                    src="../img/views-icon.png" alt="Views"></span> <span class="views_value">2,455</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="3" class="date_block"><span>Sunday, 4 July</span></td>
+                                        </tr>
+                                    </table>
+                                </li>
+                                <li class="forum_post">
+                                    <table>
+                                        <tr>
+                                            <td rowspan="2" class="img_block"><a href="#" class="img"><img src="../img/Ivan_Loichuk_bg.jpg" alt=""></a></td>
+                                            <td colspan="2" class="title_block"><a href="#"><span>How to fix this. Help please.........</span></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="author_block"><a href="#" ><span>Bartolamiej</span></a></td>
+                                            <td class="views_block"><span class="views_label"><img
+                                                    src="../img/views-icon.png" alt="Views"></span> <span class="views_value">2,455</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="3" class="date_block"><span>Sunday, 4 July</span></td>
+                                        </tr>
+                                    </table>
+                                </li>
+                                <li class="forum_post">
+                                    <table>
+                                        <tr>
+                                            <td rowspan="2" class="img_block"><a href="#" class="img"><img src="../img/Ivan_Loichuk_bg.jpg" alt=""></a></td>
+                                            <td colspan="2" class="title_block"><a href="#"><span>How to fix this</span></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="author_block"><a href="#" ><span>Ivan</span></a></td>
+                                            <td class="views_block"><span class="views_label"><img
+                                                    src="../img/views-icon.png" alt="Views"></span> <span class="views_value">2,455</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="3" class="date_block"><span>Sunday, 4 July</span></td>
+                                        </tr>
+                                    </table>
+                                </li>
+                                <li class="forum_post">
+                                    <table>
+                                        <tr>
+                                            <td rowspan="2" class="img_block"><a href="#" class="img"><img src="../img/Ivan_Loichuk_bg.jpg" alt=""></a></td>
+                                            <td colspan="2" class="title_block"><a href="#"><span>How to fix this</span></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="author_block"><a href="#" ><span>Ivan</span></a></td>
+                                            <td class="views_block"><span class="views_label"><img
+                                                    src="../img/views-icon.png" alt="Views"></span> <span class="views_value">2,455</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="3" class="date_block"><span>Sunday, 4 July</span></td>
+                                        </tr>
+                                    </table>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+=======
+>>>>>>> 405696bde06d631e08e73d465e6bbc611b7e8f18
             </div>
             <div class="col-md-9 col-sm-8 col-xs-7 custom-col-info">
                 <div class="page_info">
@@ -101,11 +213,21 @@
                         <p class="userName">Ivan Loichuk</p>
                         <p class="isOnline">online</p>
                     </div>
+<<<<<<< HEAD
+                    <div class="separator"></div>
+=======
                    <hr>
+>>>>>>> 405696bde06d631e08e73d465e6bbc611b7e8f18
                     <div class="profile_info">
                         <div class="profile_info_row">
                             <div class="label_info">City:</div>
                             <div class="value">Rivne Rivnenska oblast</div>
+<<<<<<< HEAD
+                            <div class="edit_user_info">
+                                <a href="#" id="link_edit_icon" title="Edit profile"><img src="../img/edit_icon_gray.png" id="edit_icon" alt="Edit profile" title="Edit profile"></a>
+                            </div>
+=======
+>>>>>>> 405696bde06d631e08e73d465e6bbc611b7e8f18
                         </div>
                         <div class="profile_info_row">
                             <div class="label_info">Education:</div>
@@ -125,11 +247,81 @@
                         </div>
                     </div>
                 </div>
+<<<<<<< HEAD
+                <div class="counts_module">
+                    <div class="page_count">
+                        <a href="#"><span class="label_module">Friends</span></a>
+                        <span class="value_module">55</span>
+                    </div>
+                    <div class="page_count">
+                        <a href="#"><span class="label_module">Groups</span></a>
+                        <span class="value_module">24</span>
+                    </div>
+                    <div class="page_count">
+                        <a href="#"><span class="label_module">Photos</span></a>
+                        <span class="value_module">454</span>
+                    </div>
+                    <div class="page_count">
+                        <a href="#"><span class="label_module">Music</span></a>
+                        <span class="value_module">545</span>
+                    </div>
+                    <div class="page_count">
+                        <a href="#"><span class="label_module">Posts</span></a>
+                        <span class="value_module">14</span>
+                    </div>
+                </div>
+=======
+>>>>>>> 405696bde06d631e08e73d465e6bbc611b7e8f18
             </div>
         </diw>
     </div>
 </section>
+<<<<<<< HEAD
+<section class="page_blocks">
+   <div class="container">
+       <div class="row">
+           <div class="page_block col-md-6">
 
+           </div>
+           <div class="page_block col-md-6">
+
+           </div>
+       </div>
+   </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="copyright col-md-2 col-sm-6 col-xs-12">
+                <p>Dice@2017</p><hr>
+            </div>
+
+            <div class="settings col-md-4 col-sm-6 col-xs-12">
+                <ul>
+                    <li class="list-gr"><a href="#">about</a></li>
+                    <li class="list-gr"><a href="#">help</a></li>
+                    <li class="list-gr"><a href="#">developers</a></li>
+                </ul><hr>
+            </div>
+
+            <div class="languages col-md-6 col-sm-12 col-xs-12">
+                <ul>
+                    <li class="list-gr">Language: </li>
+                    <li class="list-gr"><a href="#">english</a></li>
+                    <li class="list-gr"><a href="#">polish</a></li>
+                    <li class="list-gr"><a href="#">українська</a></li>
+                    <li class="list-gr"><a href="#">русский</a></li>
+                </ul>
+                <hr>
+            </div>
+
+        </div>
+    </div>
+</footer>
+=======
+
+>>>>>>> 405696bde06d631e08e73d465e6bbc611b7e8f18
 
 <script src="../js/libs.min.js"></script> <!-- jQuery, Bootstrap, jQuery-ui, Jcrop -->
 <script type="text/javascript" src="../js/main.js"></script>
