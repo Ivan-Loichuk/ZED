@@ -7,18 +7,4 @@ $(document).ready(function () {
    }
 
 
-<<<<<<< HEAD
 });
-=======
-
-
-});
-if (screen.width >= 600) {
-    // download complicated script
-    // swap in full-source images for low-source ones
-}
-
-if (document.documentElement.clientWidth < 900) {
-    // scripts
-}
->>>>>>> 405696bde06d631e08e73d465e6bbc611b7e8f18

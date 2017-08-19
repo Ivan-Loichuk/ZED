@@ -1,7 +1,6 @@
 * {
   box-sizing: border-box;
 }
-<<<<<<< HEAD
 body {
   font-family: 'Ubuntu', 'Open sans', sans-serif;
   background-color: #F5F6FA;
@@ -10,66 +9,6 @@ hr {
   width: 100%;
   margin: 0;
   padding: 0;
-=======
-hr {
-  width: 100%;
->>>>>>> 405696bde06d631e08e73d465e6bbc611b7e8f18
-}
-header {
-  height: 52px;
-}
-header .nav-menu {
-  min-height: 35px;
-  border-radius: 0;
-  position: fixed;
-  top: 0;
-  left: -2%;
-  width: 104%;
-  z-index: 1024;
-}
-header .nav-menu .navbar {
-  padding-right: 10%;
-  padding-left: 10%;
-  background-color: #8A25E9;
-  border-color: #5700b6;
-}
-header .nav-menu .navbar .navbar-header .navbar-brand {
-  margin: 0;
-  padding: 5px;
-  height: auto;
-  width: 100px;
-}
-header .nav-menu .navbar .navbar-header .navbar-brand .logotype {
-  margin: 0;
-  padding-top: 3px;
-<<<<<<< HEAD
-  padding-left: 0;
-=======
-  padding-left: 0px;
->>>>>>> 405696bde06d631e08e73d465e6bbc611b7e8f18
-  width: 60%;
-  height: auto;
-}
-header .nav-menu .navbar .navbar-collapse .nav a {
-  color: #ffffff;
-  background-color: #8A25E9;
-}
-header .nav-menu .navbar .navbar-collapse .nav a:hover {
-  background-color: #6803c7;
-  color: #ffffff;
-}
-header .nav-menu .navbar .navbar-collapse .nav ul {
-  color: #ffffff;
-  background-color: #8A25E9;
-}
-header .nav-menu .navbar .navbar-collapse .navbar-form button {
-  background-color: #FFFFFF;
-  color: #000000;
-}
-header .nav-menu .navbar .navbar-collapse .navbar-form button:hover {
-<<<<<<< HEAD
-  background-color: #eeeeee;
-  color: #000000;
 }
 section.user_info {
   height: 700px;
@@ -80,31 +19,11 @@ section.user_info .profile_image {
   background-color: #ffffff;
 }
 section.user_info .profile_image .img {
-=======
-  background-color: #dddddd;
-  color: #000000;
-}
-section.user_info {
-  height: 5000px;
-}
-section.user_info .profile_image {
-  border: 1px solid #e4cbcb;
-}
-section.user_info .profile_image .img {
-  background-image: url('../img/Ivan_Loichuk_bg.jpg');
-  width: 90%;
-  height: 250px;
-  background-position: center;
-  background-size: cover;
-  margin-left: 5%;
-  margin-top: 5%;
->>>>>>> 405696bde06d631e08e73d465e6bbc611b7e8f18
   border-radius: 2px;
 }
 section.user_info .profile_image .img img {
   width: 100%;
   height: auto;
-<<<<<<< HEAD
   padding: 5% 5% 5% 5%;
 }
 section.user_info .profile_image .change_photo {
@@ -292,29 +211,11 @@ section.user_info .page_info {
 }
 section.user_info .page_info .page_top {
   height: 70px;
-=======
-  padding-left: 10%;
-  padding-right: 10%;
-}
-section.user_info .profile_image .change_photo button {
-  width: 90%;
-  margin: 5% 0 5% 5%;
-}
-section.user_info .page_info {
-  position: relative;
-  background: #fff;
-  border-radius: 2px;
-  box-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;
->>>>>>> 405696bde06d631e08e73d465e6bbc611b7e8f18
 }
 section.user_info .page_info .page_top .userName {
   font-size: 26px;
   float: left;
-<<<<<<< HEAD
   width: 75%;
-=======
-  width: 50%;
->>>>>>> 405696bde06d631e08e73d465e6bbc611b7e8f18
   margin: 0;
   padding: 2% 2% 2% 5%;
 }
@@ -324,7 +225,6 @@ section.user_info .page_info .page_top .isOnline {
   margin: 0 auto;
   color: #aba4a4;
 }
-<<<<<<< HEAD
 section.user_info .page_info .separator {
   width: 100%;
   border-top: 1px solid #d4d4d4;
@@ -417,27 +317,12 @@ footer .copyright p {
   }
   section.user_info .profile_image .change_photo .modal .modal-box {
     margin: 15% auto;
-=======
-section.user_info .page_info .profile_info .profile_info_row {
-  display: block;
-}
-@media (max-width: 1186px) {
-  header {
-    height: 102px;
-  }
-}
-@media (max-width: 990px) {
-  section.user_info .profile_image .img img {
-    padding-left: 0;
-    padding-right: 0;
->>>>>>> 405696bde06d631e08e73d465e6bbc611b7e8f18
   }
 }
 @media (max-width: 768px) {
   header {
     height: 52px;
   }
-<<<<<<< HEAD
   .navbar-collapse ul,
   .navbar-collapse a {
     text-align: center;
@@ -460,23 +345,11 @@ section.user_info .page_info .profile_info .profile_info_row {
   }
 }
 @media (max-width: 480px) {
-=======
-}
-@media (max-width: 480px) {
-  .custom-col-image {
-    width: 60%;
-    margin-left: 20%;
-    margin-right: 20%;
-  }
-}
-@media (max-width: 340px) {
->>>>>>> 405696bde06d631e08e73d465e6bbc611b7e8f18
   .custom-col-image {
     width: 80%;
     margin-left: 10%;
     margin-right: 10%;
   }
-<<<<<<< HEAD
   .custom-col-info {
     width: 100%;
   }
@@ -498,6 +371,3 @@ section.user_info .page_info .profile_info .profile_info_row {
   }
 }
 /*--- END (media) Responsive style -----------------------*/
-=======
-}
->>>>>>> 405696bde06d631e08e73d465e6bbc611b7e8f18

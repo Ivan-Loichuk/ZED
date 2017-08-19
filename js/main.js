@@ -27,7 +27,6 @@ $(document).ready(function () {
 
     /* end crop functions */
 
-<<<<<<< HEAD
     /* Open and close modal window
      * Change profile image
      */
@@ -50,6 +49,4 @@ $(document).ready(function () {
             $('#edit_icon').attr('src', '../img/edit_icon_gray.png');
         });
 
-=======
->>>>>>> 405696bde06d631e08e73d465e6bbc611b7e8f18
 });
