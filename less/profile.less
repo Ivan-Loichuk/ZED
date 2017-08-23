@@ -1,15 +1,5 @@
 @import "colors";
 
-*{
-    box-sizing: border-box;
-}
-body{
-    font-family: 'Ubuntu', 'Open sans', sans-serif;
-    background-color: #F5F6FA;
-}
-hr{width: 100%; margin: 0; padding: 0;}
-
-
 section.user_info{height: 700px;
     .profile_image{border: 1px solid @userInfo_border; border-radius: 2px; background-color: @box_bg;
         .img{ border-radius: 2px;
@@ -56,7 +46,7 @@ section.user_info{height: 700px;
             }
 
         }
-    .forum_box{width: 100%; border: 1px solid @userInfo_border; margin-top: 7%; background-color: @box_bg; margin-bottom: 7%;
+    .forum_box{width: 100%; border: 1px solid @userInfo_border; border-radius: 2px; margin-top: 7%; background-color: @box_bg; margin-bottom: 7%;
         ul{list-style: none; padding: 0; margin: 0;}
         .forums{
             li{padding: 2%;}
@@ -66,7 +56,7 @@ section.user_info{height: 700px;
                 .forum_post{
                     table{width: 100%;
                         a {
-                            img{padding-right: 15%; width: 100%;}
+                            img{padding-right: 15%; width: 100%; vertical-align: text-top;}
                           }
                         .title_block{
                             a{color: @forum_font_title; text-decoration: none;
@@ -108,7 +98,7 @@ section.user_info{height: 700px;
             }
         }
     }
-    .counts_module{ border: 1px solid; margin-top: 2%; border-color: @userInfo_border; display: inline-flex; width: 100%; background-color: @box_bg;
+    .counts_module{ border: 1px solid; border-radius: 2px; margin-top: 2%; border-color: @userInfo_border; display: inline-flex; width: 100%; background-color: @box_bg;
         .page_count{ padding: 1% 2% 1% 2%; text-align: center; display: grid; border-right: 1px solid @userInfo_border; width: 20%;
             &:last-child{border: none;}
             a{color: @userInfo_fontValue; font-size: 16px; text-decoration: none;
@@ -122,26 +112,10 @@ section.user_info{height: 700px;
     }
 }
 
-footer { height: 50px; background-color: #fff; border-top: 1px solid #888888; color: #000000;
-    .settings, .languages{
-        .list-gr { display: inline; padding: 10px 15px; }
-        ul{ padding: 15px 0 5px 0;
-            li{
-                a{color: #888888;
-                    &:hover{color: #000000; text-decoration: none;}
-                }
-            }
-        }
-    }
-    .copyright{
-        p{ padding: 15px 5px 5px 15px;}
-    }
-}
-
 /*--- (media) Responsive style -----------------------*/
 
 @media (max-width: 1272px){
-    header{height: 102px;}
+    header{height: 120px;}
 
     section.user_info{
         .profile_image{
@@ -155,7 +129,7 @@ footer { height: 50px; background-color: #fff; border-top: 1px solid #888888; co
 }
 
 @media (max-width: 768px){
-    header{height: 52px;}
+    header{height: 70px;}
     .navbar-collapse{
         ul, a{text-align: center;}
         .form-group{width: 75%;  float: left; margin-right: 2%;}

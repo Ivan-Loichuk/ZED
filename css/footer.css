@@ -1,0 +1,27 @@
+footer {
+  height: 50px;
+  background-color: #fff;
+  border-top: 1px solid #888888;
+  color: #000000;
+}
+footer .settings .list-gr,
+footer .languages .list-gr {
+  display: inline;
+  padding: 10px 15px;
+}
+footer .settings ul,
+footer .languages ul {
+  padding: 15px 0 5px 0;
+}
+footer .settings ul li a,
+footer .languages ul li a {
+  color: #888888;
+}
+footer .settings ul li a:hover,
+footer .languages ul li a:hover {
+  color: #000000;
+  text-decoration: none;
+}
+footer .copyright p {
+  padding: 15px 5px 5px 15px;
+}

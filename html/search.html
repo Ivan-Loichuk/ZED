@@ -8,14 +8,16 @@
     <link rel="stylesheet" href="../css/libs/reset.min.css">
     <link rel="stylesheet" href="../css/libs/bootstrap.min.css">
     <link rel="stylesheet" href="../css/libs/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/app.css">
     <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="../css/search.css">
+    <link rel="stylesheet" href="../css/footer.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu" rel="stylesheet">
 </head>
 <body>
 <header>
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <div class="nav-menu col-md-12">
                 <nav class="navbar navbar-default">
@@ -70,17 +72,48 @@
 
 <section class="search">
     <div class="container">
-        <diw class="row">
+        <div class="row">
             <div class="col-md-3 col-sm-4 col-xs-5 custom-col-filter">
                 <div class="search-filter">
+                    <div class="header">Search parameters</div>
+                    <form action="" method="POST">
+                       <div class="city_group">
+                           <input type="text" name="city" class="form-control" placeholder="Enter a city">
+                       </div>
 
+                        <div class="age_group">
+                            <label>Age</label>
+                            <select name="age_from" id="age_from">
+                                <option value="0">from</option>
+                            </select>
+                            <select name="age_to" id="age_to">
+                                <option value="0">to</option>
+                            </select>
+                        </div>
+                        <div class="sex_group">
+                            <label>Sex</label>
+                            <label for="female" class="sex">Female</label><input type="checkbox" name="sex" id="female">
+                            <label for="male" class="sex">Male</label><input type="checkbox" name="sex" id="male">
+                        </div>
+                        <div class="online_group">
+                            <input type="checkbox" name="online_now" id="online_now">
+                            <label for="online_now">online now</label>
+                        </div>
+                        <select name="prg_lang" id="prg_lang" size="1">
+                            <option selected="selected">Choose programming language</option>
+                            <option>Java</option>
+                            <option>C++</option>
+                            <option>PHP</option>
+                            <option>JavaScript</option>
+                        </select>
+                    </form>
                 </div>
             </div>
             <div class="col-md-9 col-sm-8 col-xs-7 custom-col-results">
                 <div class="search-form">
                     <div class="menu" id="">
-                        <ul class="">
-                            <li class=""><a href="#">Friends</a></li>
+                        <ul id="search_menu">
+                            <li><a href="#" class="active">Friends</a></li>
                             <li><a href="#">Groups</a></li>
                         </ul>
                     </div>
@@ -100,8 +133,8 @@
                                             <td class="img_block" rowspan="3"><a href="#" class="img"><img src="../img/Ivan_Loichuk_bg.jpg" alt=""></a></td>
                                             <td class="info_block" rowspan="3">
                                                 <a href="#" class="title"><span>Ivan Loichuk</span></a>
-                                                <a href="#" class="town"><span>Rivne</span></a>
-                                                <a href="#" class="work"><span>Industi corporation</span></a>
+                                                <span class="town">Rivne</span>
+                                                <span class="work">Industi corporation</span>
                                             </td>
                                             <td class="add_button" rowspan="3">
                                                 <input type="button" class="btn btn-default" value="Add to friends">
@@ -127,8 +160,8 @@
                                             <td class="img_block" rowspan="3"><a href="#" class="img"><img src="../img/Ivan_Loichuk_bg.jpg" alt=""></a></td>
                                             <td class="info_block" rowspan="3">
                                                 <a href="#" class="title"><span>Ivan Loichuk</span></a>
-                                                <a href="#" class="town"><span>Rivne</span></a>
-                                                <a href="#" class="work"><span>Industi corporation</span></a>
+                                                <span class="town">Rivne</span>
+                                                <span class="work">Industi corporation</span>
                                             </td>
                                             <td class="add_button" rowspan="3">
                                                 <input type="button" class="btn btn-default" value="Add to friends">
@@ -154,8 +187,8 @@
                                             <td class="img_block" rowspan="3"><a href="#" class="img"><img src="../img/Ivan_Loichuk_bg.jpg" alt=""></a></td>
                                             <td class="info_block" rowspan="3">
                                                 <a href="#" class="title"><span>Ivan Loichuk</span></a>
-                                                <a href="#" class="town"><span>Rivne</span></a>
-                                                <a href="#" class="work"><span>Industi corporation</span></a>
+                                                <span class="town">Rivne</span>
+                                                <span class="work">Industi corporation</span>
                                             </td>
                                             <td class="add_button" rowspan="3">
                                                 <input type="button" class="btn btn-default" value="Add to friends">
@@ -181,8 +214,8 @@
                                             <td class="img_block" rowspan="3"><a href="#" class="img"><img src="../img/Ivan_Loichuk_bg.jpg" alt=""></a></td>
                                             <td class="info_block" rowspan="3">
                                                 <a href="#" class="title"><span>Ivan Loichuk</span></a>
-                                                <a href="#" class="town"><span>Rivne</span></a>
-                                                <a href="#" class="work"><span>Industi corporation</span></a>
+                                                <span class="town">Rivne</span>
+                                                <span class="work">Industi corporation</span>
                                             </td>
                                             <td class="add_button" rowspan="3">
                                                 <input type="button" class="btn btn-default" value="Add to friends">
@@ -207,11 +240,42 @@
                     </ul>
                 </div>
             </div>
-        </diw>
+        </div>
     </div>
 </section>
 
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="copyright col-md-2 col-sm-6 col-xs-12">
+                <p>Dice@2017</p><hr>
+            </div>
 
+            <div class="settings col-md-4 col-sm-6 col-xs-12">
+                <ul>
+                    <li class="list-gr"><a href="#">about</a></li>
+                    <li class="list-gr"><a href="#">help</a></li>
+                    <li class="list-gr"><a href="#">developers</a></li>
+                </ul><hr>
+            </div>
+
+            <div class="languages col-md-6 col-sm-12 col-xs-12">
+                <ul>
+                    <li class="list-gr">Language: </li>
+                    <li class="list-gr"><a href="#">english</a></li>
+                    <li class="list-gr"><a href="#">polish</a></li>
+                    <li class="list-gr"><a href="#">українська</a></li>
+                    <li class="list-gr"><a href="#">русский</a></li>
+                </ul>
+                <hr>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+<script src="../js/libs.min.js"></script> <!-- jQuery, Bootstrap, jQuery-ui, Jcrop -->
+<script type="text/javascript" src="../js/main.js"></script>
 
 </body>
 </html>

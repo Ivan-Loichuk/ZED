@@ -1,5 +1,5 @@
 header {
-  height: 52px;
+  height: 70px;
 }
 header .nav-menu {
   min-height: 35px;
@@ -13,8 +13,9 @@ header .nav-menu {
 header .nav-menu .navbar {
   padding-right: 10%;
   padding-left: 10%;
-  background-color: #8A25E9;
-  border-color: #5700b6;
+  background-color: #124CE9;
+  border-color: #0019b6;
+  margin-bottom: 0;
 }
 header .nav-menu .navbar .navbar-header .navbar-brand {
   margin: 0;
@@ -31,15 +32,15 @@ header .nav-menu .navbar .navbar-header .navbar-brand .logotype {
 }
 header .nav-menu .navbar .navbar-collapse .nav a {
   color: #ffffff;
-  background-color: #8A25E9;
+  background-color: #124CE9;
 }
 header .nav-menu .navbar .navbar-collapse .nav a:hover {
-  background-color: #6803c7;
+  background-color: #002ac7;
   color: #ffffff;
 }
 header .nav-menu .navbar .navbar-collapse .nav ul {
   color: #ffffff;
-  background-color: #8A25E9;
+  background-color: #124CE9;
 }
 header .nav-menu .navbar .navbar-collapse .navbar-form button {
   background-color: #FFFFFF;

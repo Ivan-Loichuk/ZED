@@ -1,15 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-body {
-  font-family: 'Ubuntu', 'Open sans', sans-serif;
-  background-color: #F5F6FA;
-}
-hr {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
 section.user_info {
   height: 700px;
 }
@@ -32,13 +20,13 @@ section.user_info .profile_image .change_photo {
   height: 43px;
 }
 section.user_info .profile_image .change_photo button {
-  background-color: #8A25E9;
+  background-color: #124CE9;
   border-radius: 2px;
   color: #ffffff;
   width: 90%;
 }
 section.user_info .profile_image .change_photo button:hover {
-  background-color: #6803c7;
+  background-color: #002ac7;
   color: #ffffff;
   text-decoration: none;
 }
@@ -65,7 +53,7 @@ section.user_info .profile_image .change_photo .modal .modal-box {
 }
 section.user_info .profile_image .change_photo .modal .modal-box .modal-header {
   padding: 10px 20px;
-  background: #8A25E9;
+  background: #124CE9;
   color: #ffffff;
 }
 section.user_info .profile_image .change_photo .modal .modal-box .modal-header p {
@@ -145,6 +133,7 @@ section.user_info .profile_image .change_photo .modal .modal-box .modal-body for
 section.user_info .forum_box {
   width: 100%;
   border: 1px solid #d4d4d4;
+  border-radius: 2px;
   margin-top: 7%;
   background-color: #ffffff;
   margin-bottom: 7%;
@@ -171,6 +160,7 @@ section.user_info .forum_box .forums .forum_posts .forum_post table {
 section.user_info .forum_box .forums .forum_posts .forum_post table a img {
   padding-right: 15%;
   width: 100%;
+  vertical-align: text-top;
 }
 section.user_info .forum_box .forums .forum_posts .forum_post table .title_block a {
   color: #000000;
@@ -178,7 +168,7 @@ section.user_info .forum_box .forums .forum_posts .forum_post table .title_block
 }
 section.user_info .forum_box .forums .forum_posts .forum_post table .title_block a:hover {
   text-decoration: none;
-  color: #5700b6;
+  color: #0019b6;
 }
 section.user_info .forum_box .forums .forum_posts .forum_post table .author_block a {
   color: #ed143d;
@@ -256,6 +246,7 @@ section.user_info .page_info .profile_info .profile_info_row .edit_user_info {
 }
 section.user_info .counts_module {
   border: 1px solid;
+  border-radius: 2px;
   margin-top: 2%;
   border-color: #d4d4d4;
   display: inline-flex;
@@ -283,37 +274,10 @@ section.user_info .counts_module .page_count a:hover {
 section.user_info .counts_module .page_count .value_module {
   color: #7d7d7d;
 }
-footer {
-  height: 50px;
-  background-color: #fff;
-  border-top: 1px solid #888888;
-  color: #000000;
-}
-footer .settings .list-gr,
-footer .languages .list-gr {
-  display: inline;
-  padding: 10px 15px;
-}
-footer .settings ul,
-footer .languages ul {
-  padding: 15px 0 5px 0;
-}
-footer .settings ul li a,
-footer .languages ul li a {
-  color: #888888;
-}
-footer .settings ul li a:hover,
-footer .languages ul li a:hover {
-  color: #000000;
-  text-decoration: none;
-}
-footer .copyright p {
-  padding: 15px 5px 5px 15px;
-}
 /*--- (media) Responsive style -----------------------*/
 @media (max-width: 1272px) {
   header {
-    height: 102px;
+    height: 120px;
   }
   section.user_info .profile_image .change_photo .modal .modal-box {
     margin: 15% auto;
@@ -321,7 +285,7 @@ footer .copyright p {
 }
 @media (max-width: 768px) {
   header {
-    height: 52px;
+    height: 70px;
   }
   .navbar-collapse ul,
   .navbar-collapse a {
