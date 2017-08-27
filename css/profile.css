@@ -20,14 +20,14 @@ section.user_info .profile_image .change_photo {
   height: 43px;
 }
 section.user_info .profile_image .change_photo button {
-  background-color: #124CE9;
+  background-color: rgba(18, 76, 233, 0.9);
   border-radius: 2px;
+  border: none;
   color: #ffffff;
   width: 90%;
 }
 section.user_info .profile_image .change_photo button:hover {
-  background-color: #002ac7;
-  color: #ffffff;
+  background-color: #013bd8;
   text-decoration: none;
 }
 section.user_info .profile_image .change_photo .modal {
@@ -52,18 +52,21 @@ section.user_info .profile_image .change_photo .modal .modal-box {
   animation-timing-function: ease-out;
 }
 section.user_info .profile_image .change_photo .modal .modal-box .modal-header {
-  padding: 10px 20px;
+  padding: 0 20px;
   background: #124CE9;
   color: #ffffff;
 }
 section.user_info .profile_image .change_photo .modal .modal-box .modal-header p {
-  font-size: 24px;
+  font-size: 20px;
+  padding: 1% 0;
   margin: 0;
 }
 section.user_info .profile_image .change_photo .modal .modal-box .modal-header .close-modal {
   float: right;
   cursor: pointer;
   width: 5px;
+  position: relative;
+  top: 10px;
 }
 section.user_info .profile_image .change_photo .modal .modal-box .modal-body {
   background: #ECEFF1;
@@ -77,11 +80,12 @@ section.user_info .profile_image .change_photo .modal .modal-box .modal-body for
 }
 section.user_info .profile_image .change_photo .modal .modal-box .modal-body form input {
   margin-top: 3%;
-  background-color: #FFFFFF;
-  color: #000000;
+  background-color: rgba(18, 76, 233, 0.9);
+  border: none;
+  color: #ffffff;
 }
 section.user_info .profile_image .change_photo .modal .modal-box .modal-body form input:hover {
-  background-color: #eeeeee;
+  background-color: #013bd8;
 }
 section.user_info .profile_image .change_photo .modal .modal-box .modal-body form input[type=file] {
   display: inline;
@@ -99,16 +103,16 @@ section.user_info .profile_image .change_photo .modal .modal-box .modal-body for
 section.user_info .profile_image .change_photo .modal .modal-box .modal-body form .btn-file {
   position: relative;
   overflow: hidden;
-  height: 34px;
+  height: 33px;
   width: 15%;
-  color: #000000;
-  border-radius: 5px;
-  background: #FFFFFF;
+  background-color: rgba(18, 76, 233, 0.9);
+  border: none;
+  color: #ffffff;
   line-height: 20px;
   margin-top: 3%;
 }
 section.user_info .profile_image .change_photo .modal .modal-box .modal-body form .btn-file:hover {
-  background-color: #eeeeee;
+  background-color: #013bd8;
 }
 @-webkit-keyframes modalbox {
   0% {
@@ -276,17 +280,11 @@ section.user_info .counts_module .page_count .value_module {
 }
 /*--- (media) Responsive style -----------------------*/
 @media (max-width: 1272px) {
-  header {
-    height: 120px;
-  }
   section.user_info .profile_image .change_photo .modal .modal-box {
     margin: 15% auto;
   }
 }
 @media (max-width: 768px) {
-  header {
-    height: 70px;
-  }
   .navbar-collapse ul,
   .navbar-collapse a {
     text-align: center;

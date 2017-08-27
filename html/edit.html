@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UserName</title>
+    <link rel="shortcut icon" href="../img/shortcut_icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/libs/reset.min.css">
+    <link rel="stylesheet" href="../css/libs/bootstrap.min.css">
+    <link rel="stylesheet" href="../libs/chosen_v1.8.0/chosen.min.css">
+    <link rel="stylesheet" href="../css/libs/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/app.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/edit.css">
+    <link rel="stylesheet" href="../css/footer.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="nav-menu col-md-12">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="#"><img src="../img/logotype4.png" class="logotype"></a>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+                                <li><a href="#">Friends</a></li>
+                                <li><a href="#">Messages</a></li>
+                                <li><a href="#">Forum</a></li>
+                                <li><a href="#">Music</a></li>
+                                <li><a href="#">Photos</a></li>
+                            </ul>
+                            <form class="navbar-form navbar-left">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Search">
+                                </div>
+                                <button type="submit" class="btn btn-default">Submit</button>
+                            </form>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">UserName <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Settings</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="#">Log out</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div><!-- /.navbar-collapse -->
+                    </div><!-- /.container-fluid -->
+                </nav>
+
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="edit">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-4 col-xs-5 custom-col-menu">
+                <div class="edit-menu">
+                    <div class="menu" >
+                        <ul id="nav-edit" class="nav nav-pills nav-stacked">
+                            <li class="active"><a href="#" class="basic_info">Basic info</a></li>
+                            <li><a href="#" class="general_settings">General</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9 col-sm-8 col-xs-7 custom-col-edit-panel">
+                <div class="edit-header">
+                    <div class="menu" id="">
+                        <div>
+                            <a href="#" class="active username">UserName</a>
+                            <img src="../img/arrow.png" alt="">
+                            <a href="#" class="nav-basic_info">Basic info</a>
+                            <a href="#" class="nav-general_settings">General</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="edit-content">
+                    <form class="basic_info_form" action="" method="POST">
+                        <div class="edit-form">
+                            <label for="edit_name">Name</label><input type="text" id="edit_name" class="form-control" placeholder="Name">
+                        </div>
+                        <div class="edit-form">
+                            <label for="edit_name">Surname</label><input type="text" id="edit_surname" class="form-control" placeholder="Surname">
+                        </div>
+                        <div class="edit-form">
+                            <label for="edit_sex">Sex</label>
+                            <select name="edit_sex" id="edit_sex">
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+                        </div>
+                        <div class="edit-form">
+                            <label for="edit_birthday">Birthday</label><input type="date" id="edit_birthday" class="form-control" placeholder="Birthday (mm/dd/yyyy)">
+                        </div>
+                        <div class="edit-form">
+                            <label for="edit_name">City</label><input type="text" id="edit_city" class="form-control" placeholder="City">
+                        </div>
+                        <div class="edit-form">
+                            <label for="edit_name">Education</label><input type="text" id="edit_education" class="form-control" placeholder="Education">
+                        </div>
+                        <div class="edit-form">
+                            <label for="edit_name">Work</label><input type="text" id="edit_work" class="form-control" placeholder="Work">
+                        </div>
+                        <div class="edit-form"><label for="edit_prg_lang">Programing languages</label>
+                            <select name="edit_prg_lang" id="edit_prg_lang"  data-placeholder="Choose your languages" class="chosen-select" multiple tabindex="5" size="5">
+                                <option value="java">Java</option>
+                                <option value="php">PHP</option>
+                                <option value="java" >Java</option>
+                            </select>
+                        </div>
+                        <div class="edit-form">
+                            <button type="submit" class="btn btn-default button">Save</button>
+                        </div>
+
+                    </form>
+                    
+                    <div class="general_settings_form">
+                        <div class="block">
+                            <div class="settings_label">
+                                <label class="password_label">Password</label>
+                            </div>
+                            <div class="settings_value">
+                                <input type="password" id="edit_password" name="edit_password" value="example" disabled="disabled">
+                            </div>
+                            <a href=""  class="modal_change modal-trigger" data-modal="modal-edit-password">Change</a>
+                        </div>
+                        <div class="block">
+                            <div class="settings_label">
+                                <label class="email_label">Email</label>
+                            </div>
+                            <div class="settings_value">
+                                <input type="email" id="edit_email" name="edit_email" value="example@gmail.com">
+                            </div>
+                        </div>
+                        <div class="block">
+                            <button type="submit" class="btn btn-default button">Save</button>
+                        </div>
+                    </div>
+                    <!--#####-Modal window for general settings-######-->
+                    <div class="modal" id="modal-edit-password">
+                        <div class="modal-box">
+                            <div class="modal-header">
+                                <div class="close-modal">&#10006;</div>
+                                <p>Change password</p>
+                            </div>
+                            <div class="modal-body">
+                                <div class="info">You can use any combination of Latin letters, numbers and special symbols ! @ # $ % ^ & * ( ) _ - +. Your password should not be shorter than 6 characters.</div>
+                                <form action="" method="POST">
+                                    <div class="form-group">
+                                        <label for="current_pass">Current password</label>
+                                        <input type="password" class="form-control" id="current_pass" name="current_pass" placeholder="Current password">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="new_pass">New password</label>
+                                        <input type="password" class="form-control" id="new_pass" name="new_pass" placeholder="New password">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="confirm_pass">Confirm password</label>
+                                        <input type="password" class="form-control" id="confirm_pass" name="confirm_pass" placeholder="Confirm password">
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="reset" class="btn btn-default close-modal button">Cancel</button>
+                                        <button type="submit" class="btn btn-default button">Save</button>
+                                    </div>
+                                    </form>
+                            </div>
+                        </div>
+                    </div>
+                   <!--#### End modal window #### -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="copyright col-md-2 col-sm-6 col-xs-12">
+                <p>Dice@2017</p><hr>
+            </div>
+
+            <div class="settings col-md-4 col-sm-6 col-xs-12">
+                <ul>
+                    <li class="list-gr"><a href="#">about</a></li>
+                    <li class="list-gr"><a href="#">help</a></li>
+                    <li class="list-gr"><a href="#">developers</a></li>
+                </ul><hr>
+            </div>
+
+            <div class="languages col-md-6 col-sm-12 col-xs-12">
+                <ul>
+                    <li class="list-gr">Language: </li>
+                    <li class="list-gr"><a href="#">english</a></li>
+                    <li class="list-gr"><a href="#">polish</a></li>
+                    <li class="list-gr"><a href="#">українська</a></li>
+                    <li class="list-gr"><a href="#">русский</a></li>
+                </ul>
+                <hr>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+<script src="../js/libs.min.js"></script> <!-- jQuery, Bootstrap, jQuery-ui, Jcrop -->
+<script src="../libs/chosen_v1.8.0/chosen.jquery.min.js"></script>
+<script type="text/javascript" src="../js/main.js"></script>
+
+</body>
+</html>

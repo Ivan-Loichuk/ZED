@@ -50,3 +50,15 @@ header .nav-menu .navbar .navbar-collapse .navbar-form button:hover {
   background-color: #eeeeee;
   color: #000000;
 }
+/*--- (media) Responsive style -----------------------*/
+@media (max-width: 1272px) {
+  header {
+    height: 120px;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    height: 70px;
+  }
+}
+/*--- END (media) Responsive style -----------------------*/

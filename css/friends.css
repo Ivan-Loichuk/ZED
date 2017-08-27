@@ -1,47 +1,35 @@
-* {
-  box-sizing: border-box;
-}
-body {
-  font-family: 'Ubuntu', 'Open sans', sans-serif;
-  background-color: #F5F6FA;
-}
-hr {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-section.friends .main-header {
+section.friends .friends-header {
   width: 100%;
   border: 1px solid #d4d4d4;
   background-color: #ffffff;
   border-radius: 2px;
 }
-section.friends .main-header .menu {
+section.friends .friends-header .menu {
   display: inline-block;
-  padding: 1% 2% 0 2%;
+  padding: 1% 2% 1% 2%;
 }
-section.friends .main-header .menu img {
+section.friends .friends-header .menu img {
   display: inline-block;
 }
-section.friends .main-header .menu a {
+section.friends .friends-header .menu a {
   padding: 5px 10px;
   display: inline-block;
   color: #000000;
   text-decoration: none;
 }
-section.friends .main-header .menu a.username {
+section.friends .friends-header .menu a.username {
   padding: 5px 8px;
 }
-section.friends .main-header .menu a:hover {
+section.friends .friends-header .menu a:hover {
   color: #0019b6;
 }
-section.friends .main-header .menu a.nav-followers {
+section.friends .friends-header .menu a.nav-followers {
   display: none;
 }
-section.friends .main-header form {
+section.friends .friends-header form {
   padding: 1% 2% 2% 2%;
 }
-section.friends .main-header form input {
+section.friends .friends-header form input {
   display: inline-block;
   width: 100%;
 }
@@ -82,114 +70,104 @@ section.friends .search-filter .online_group label {
 section.friends .search-filter .online_group input {
   margin: 5% 0 0 5%;
 }
-section.friends .main-content {
+section.friends .friends-content {
   width: 100%;
 }
-section.friends .main-content ul {
+section.friends .friends-content ul {
   width: 100%;
   float: left;
-  padding: 2% 0% 0% 2%;
+  padding: 2% 0 0 2%;
   border: 1px solid #d4d4d4;
   border-radius: 2px;
   margin-top: 2%;
   background-color: #ffffff;
   margin-bottom: 7%;
 }
-section.friends .main-content ul li {
+section.friends .friends-content ul li {
   background-color: rgba(18, 76, 233, 0.07);
   border: 1px solid #d4d4d4;
   margin: 0 2% 2% 0;
   width: 48%;
   float: left;
 }
-section.friends .main-content ul .content_box table {
+section.friends .friends-content ul .content_box table {
   width: 100%;
 }
-section.friends .main-content ul .content_box table tr,
-section.friends .main-content ul .content_box table td {
+section.friends .friends-content ul .content_box table tr,
+section.friends .friends-content ul .content_box table td {
   vertical-align: middle;
 }
-section.friends .main-content ul .content_box table .img_block {
+section.friends .friends-content ul .content_box table .img_block {
   width: 25%;
 }
-section.friends .main-content ul .content_box table .img_block img {
+section.friends .friends-content ul .content_box table .img_block img {
   width: 100%;
   padding: 5% 5%;
 }
-section.friends .main-content ul .content_box table .info_block {
+section.friends .friends-content ul .content_box table .info_block {
   height: 100%;
   width: 35%;
   vertical-align: text-top;
   padding-left: 2%;
   padding-top: 2%;
 }
-section.friends .main-content ul .content_box table .info_block a {
+section.friends .friends-content ul .content_box table .info_block a {
   display: block;
   font-size: 16px;
 }
-section.friends .main-content ul .content_box table .info_block a.title {
+section.friends .friends-content ul .content_box table .info_block a.title {
   font-size: 20px;
 }
-section.friends .main-content ul .content_box table .info_block a.title:hover {
+section.friends .friends-content ul .content_box table .info_block a.title:hover {
   text-decoration: none;
 }
-section.friends .main-content ul .content_box table .info_block span {
+section.friends .friends-content ul .content_box table .info_block span {
   display: block;
 }
-section.friends .main-content ul .content_box table .info_block span.town {
+section.friends .friends-content ul .content_box table .info_block span.town {
   position: relative;
   bottom: 5px;
   color: #5b5b5b;
 }
-section.friends .main-content ul .content_box table .info_block span.work {
+section.friends .friends-content ul .content_box table .info_block span.work {
   position: relative;
   bottom: 7px;
   color: #5b5b5b;
 }
-section.friends .main-content ul .content_box table .add_button {
+section.friends .friends-content ul .content_box table .add_button {
   text-align: center;
   vertical-align: middle;
   width: 40%;
 }
-section.friends .main-content ul .content_box table .add_button input {
+section.friends .friends-content ul .content_box table .add_button input {
   width: 90%;
   margin: 1% 5%;
 }
-section.friends .main-content ul .content_box table .add_button a {
+section.friends .friends-content ul .content_box table .add_button a {
   color: #000000;
 }
-section.friends .main-content ul .content_box table .mutual_friends .span {
+section.friends .friends-content ul .content_box table .mutual_friends .span {
   color: #000000;
 }
-section.friends .main-content ul .content_box table .gallery_block {
+section.friends .friends-content ul .content_box table .gallery_block {
   width: 13%;
   vertical-align: middle;
 }
-section.friends .main-content ul .content_box table .gallery_block .small_gallery {
+section.friends .friends-content ul .content_box table .gallery_block .small_gallery {
   width: 100%;
 }
-section.friends .main-content ul .content_box table .gallery_block .small_gallery img {
+section.friends .friends-content ul .content_box table .gallery_block .small_gallery img {
   width: 50%;
   float: left;
   padding: 3%;
 }
-section.friends .main-content ul .content_box table .gallery_link {
+section.friends .friends-content ul .content_box table .gallery_link {
   text-align: center;
 }
 /*--- (media) Responsive style -----------------------*/
-@media (max-width: 1272px) {
-  header {
-    height: 120px;
-  }
-}
 @media (max-width: 990px) {
   section.friends .main-content ul li {
     width: 98%;
-  }
-}
-@media (max-width: 768px) {
-  header {
-    height: 70px;
   }
 }
 @media (max-width: 620px) {

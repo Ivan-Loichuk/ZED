@@ -1,17 +1,9 @@
 @import "colors";
 
-*{
-  box-sizing: border-box;
-}
-body{
-  font-family: 'Ubuntu', 'Open sans', sans-serif;
-  background-color: #F5F6FA;
-}
-hr{width: 100%; margin: 0; padding: 0;}
 
 section.friends{
-  .main-header{ width: 100%; border: 1px solid @box_border; background-color: @box_bg; border-radius: 2px;
-    .menu{display: inline-block; padding: 1% 2% 0 2%;
+  .friends-header{ width: 100%; border: 1px solid @box_border; background-color: @box_bg; border-radius: 2px;
+    .menu{display: inline-block; padding: 1% 2% 1% 2%;
       img{display: inline-block; }
       a{padding: 5px 10px; display: inline-block; color: #000000; text-decoration: none;
         &.username{padding: 5px 8px;}
@@ -46,8 +38,8 @@ section.friends{
     }
   }
 
-  .main-content{width: 100%;
-    ul{width: 100%; float: left; padding: 2% 0% 0% 2%; border: 1px solid @box_border; border-radius: 2px; margin-top: 2%; background-color: @box_bg; margin-bottom: 7%;
+  .friends-content{width: 100%;
+    ul{width: 100%; float: left; padding: 2% 0 0 2%; border: 1px solid @box_border; border-radius: 2px; margin-top: 2%; background-color: @box_bg; margin-bottom: 7%;
         li{ background-color: fade(@friends_activeBg, 7%); border: 1px solid @box_border; margin: 0 2% 2% 0; width: 48%; float: left; }
         .content_box{
           table{width: 100%; tr, td{  vertical-align: middle;}
@@ -86,15 +78,8 @@ section.friends{
 
 /*--- (media) Responsive style -----------------------*/
 
-@media (max-width: 1272px){
-  header{height: 120px;}
-}
-
 @media (max-width: 990px){
   section.friends .main-content ul li { width: 98%; }
-}
-@media (max-width: 768px){
-  header{height: 70px;}
 }
 
 @media (max-width: 620px) {

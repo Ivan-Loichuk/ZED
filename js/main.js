@@ -42,7 +42,7 @@ $(document).ready(function () {
 
 /* links hover effect*/
     // exchange image when mouse hover
-    if($('#link_edit_icon').length == 1) {
+    if($('#link_edit_icon').length > 0) {
         $('#link_edit_icon').hover(function () {
                 $('#edit_icon').attr('src', '../img/edit_icon_black.png');
             },
@@ -51,14 +51,14 @@ $(document).ready(function () {
             });
     }
     // some effects when link is active (search page)
-    if($('#search_menu').length == 1) {
+    if($('#search_menu').length > 0) {
         $('#search_menu li > a').click(function () {
             $('#search_menu a').removeClass();
             $(this).addClass('active');
         });
     }
 /* generate age value for search select */
-    if($('#age_from').length == 1 || $('#age_to').length == 1) {
+    if($('#age_from').length > 0 || $('#age_to').length > 0) {
         for (var i = 0; i < 100; i++) {
             $('#age_from').append($('<option> </option>').val(i).html(i));
         }
@@ -69,7 +69,7 @@ $(document).ready(function () {
 /* end generate value */
 
 /* friends page left navbar */
-    if($('#nav-friends').length == 1) {
+    if($('#nav-friends').length > 0) {
         $('#nav-friends li').click(function () {
             $('#nav-friends li').removeClass();
             $(this).addClass('active');
@@ -87,5 +87,42 @@ $(document).ready(function () {
             }
         });
     }
+
+/* 'edit page' left navbar */
+    if($('#nav-edit').length > 0) {
+        $('#nav-edit li').click(function () {
+            $('#nav-edit li').removeClass();
+            $(this).addClass('active');
+            if($(this).children()[0].className == "basic_info"){
+                $('.nav-basic_info').css('display', 'inline-block');
+                $('.nav-general_settings').css('display', 'none');
+                $('.basic_info_form').css('display', 'block');
+                $('.general_settings_form').css('display', 'none');
+            }
+            if($(this).children()[0].className == "general_settings"){
+                $('.nav-basic_info').css('display', 'none');
+                $('.nav-general_settings').css('display', 'inline-block');
+                $('.basic_info_form').css('display', 'none');
+                $('.general_settings_form').css('display', 'block');
+            }
+        });
+    }
+
+/*  programing languages select */
+    if($(".chosen-select").length > 0)
+    $(".chosen-select").chosen();
+    $("#edit_prg_lang_chosen").attr('style', 'width: 50%');   // width for select
+    if($( window ).width() <= 340){    // RWD for select
+        $("#edit_prg_lang_chosen").attr('style', 'width: 60%');   // width for select
+    }
+    $("#edit_prg_lang").chosen().change(function () {
+        $("#edit_prg_lang").val();  //your value
+    });
+
+    $("#edit_lang").chosen().change(function () {
+        $("#edit_lang").val();  //your value
+    });
+
+    /*  end select */
 
 });

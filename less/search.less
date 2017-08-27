@@ -1,15 +1,5 @@
 @import "colors";
 
-*{
-  box-sizing: border-box;
-}
-body{
-  font-family: 'Ubuntu', 'Open sans', sans-serif;
-  background-color: #F5F6FA;
-}
-hr{width: 100%; margin: 0; padding: 0;}
-
-
 section.search{
   .search-form{ width: 100%; border: 1px solid @box_border; background-color: @box_bg; border-radius: 2px;
       .menu{display: block;
@@ -100,14 +90,13 @@ section.search{
 /*--- (media) Responsive style -----------------------*/
 
 @media (max-width: 1272px){
-  header{height: 120px;}
+
 }
 
 @media (max-width: 990px){
   section.search .search-results ul .main_content .content_box table .add_button input{width: 90%; margin: 1% 5%;}
 }
 @media (max-width: 768px){
-  header{height: 70px;}
   section.search .search-results ul .main_content .content_box table .info_block a.title{font-size: 18px;}
   .gallery_block{ display: none;}
   .gallery_link{ display: none;}
